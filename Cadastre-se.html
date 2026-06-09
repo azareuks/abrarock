@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+        body {
+            font-family: Montserrat, sans-serif;
+        }
+    </style>
+	<title>Cadastro</title>
+</head>
+<body bgcolor="black">
+	<span style="color: white;">
+		<h1 align="center"> CADASTRO </h1>
+
+<table width="100%">
+    <tr>
+        
+        <td>
+            <a href="projeto.html" style="color: red;"> INICIO </a> |
+            <a href="line-up.html" style="color: red;">LINE-UP</a>
+        </td>
+
+        <td align="right">
+            CADASTRE-SE
+        </td>
+    </tr>
+</table>
+  <hr>
+
+  <form>
+    
+    <fieldset>
+      <legend><b>Dados da Conta</b></legend>
+
+        <label for="email">E-Mail:</label><br>
+        <input type="email" name="email" id="email" size="50">  
+
+        <br><br>
+
+        <label for="senha">Senha:</label><br>
+        <input type="password" name="senha" id="senha" size="15" minlength="8" maxlength="15"> 
+
+      <br><br> 
+
+        <label for="senha">Confirmar senha:</label><br>
+        <input type="password" name="senha" id="senha" size="15" minlength="8" maxlength="15"> 
+
+      <br><br>
+      <label for="bandas">Bandas Preferidas:</label><br>
+      <select id="bandas" name="bandas" size="6" multiple>
+        <option>My Chemical Romance</option>        
+        <option>Bring Me The Horizon</option>        
+        <option>Violent Vira</option>        
+        <option>Avenged Sevenfold</option>        
+        <option>Slipknot</option>
+        <option>Beartooth</option>               
+      </select>
+      <br>
+      <small><i>Vários use ctrl+click</i></small>
+
+      <br><br>
+      <label for="formacao">Formação:</label><br>
+      <select id="formacao" name="formacao">
+        <option></option>
+        <optgroup label="Graduação">
+          <option>Biológicas</option>
+          <option>Engenharia</option>
+          <option>Exatas</option>
+          <option>Humanas</option>
+          <option>Tecnologia</option>
+        </optgroup>
+        
+        <optgroup label="Pós-Graduação">
+          <option>Mestrado</option>
+          <option>Doutorado</option>
+          <option>Pós-Doc</option>
+        </optgroup>
+      </select>      
+
+      <br><br>
+      <label for="conhecimento">Conhecimento:</label><br>
+      <input type="text" id="conhecimento" name="conhecimento" 
+             list="lista-conhecimentos">
+
+      <datalist id="lista-conhecimentos">
+        <option value="HTML5">HTML5</option>
+        <option value="CSS3">CSS3</option>
+        <option value="Javascript">Javascript</option> 
+        <option value="PHP">PHP</option> 
+        <option value="JAVA">JAVA</option> 
+        <option value="C#">C#</option> 
+      </datalist>     
+    </fieldset>
+
+    <fieldset>
+      <legend><b>Dados Pessoais</b></legend>
+    
+        <label for="nome">Nome:</label><br>
+        <input type="text" name="nome" id="nome" size="50" required minlength="3" maxlength="40" spellcheck="true" placeholder="Informe o seu nome completo">  
+
+        <br><br>   
+
+        <label for="curso">País de Residência:</label><br>
+      <select id="curso" name="curso">
+        <option selected>---clique---</option>
+        <option>Argentina</option>
+        <option>Bolívia</option>
+        <option>Brasil</option>
+        <option>Chile</option>
+        <option>Colômbia</option>
+        <option>Equador</option>
+        <option>Guiana</option>
+        <option>Paraguai</option>
+        <option>Peru</option>
+        <option>Suriname</option>
+        <option>Uruguai</option>
+        <option>Venezuela</option>
+      </select>
+
+        <br><br>       
+
+        <label for="sexo">Sexo:</label><br>
+        <input type="radio" name="sexo" id="sexo" value="F" checked> F
+        <input type="radio" name="sexo" id="sexo" value="M"> M            
+
+        <br><br>
+
+        <label for="dtNasc">Data de Nascimento:</label><br>
+        <input type="date" name="dtNasc" id="dtNasc">
+
+        <br><br>
+
+        <label for="telefone">Telefone:</label> <br>
+        <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999">
+
+        <br><br>
+
+        <label for="cpf">CPF:</label> <br>
+        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" maxlength="14">
+
+        <br><br>      
+
+        <label for="foto">Foto:</label><br>
+        <input type="file" name="foto" id="foto" accept="image/png">  
+      
+    </fieldset>
+
+    <br>
+    <input type="submit" name="btn1" value="Cadastrar">
+    <input type="reset"  name="btn2" value="Limpar">
+  </form>
+</span>
+</body>
+</html>
